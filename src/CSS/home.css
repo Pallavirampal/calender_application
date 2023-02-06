@@ -1,0 +1,26 @@
+.Box{
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    background-color: #cc80ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 5px rgb(156, 156, 156);
+}
+.box h1 a{
+    color: #5f5d5d;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.box h1 a:hover{
+    color: #2b133c;
+}
+.box h2{
+    color: rgb(104, 49, 139);
+}

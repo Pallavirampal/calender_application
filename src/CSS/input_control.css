@@ -1,13 +1,14 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 50px;
   }
   
   .container label {
     font-weight: 700;
     font-size: 1rem;
     color: #313131;
+    text-align: center;
   }
   
   .container input {
