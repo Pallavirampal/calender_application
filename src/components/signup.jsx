@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import './login.jsx';
 import styles from "../CSS/login.module.css";
 import InputControl from "../inputcontrol/input_control.js";
 import { auth } from "../firebase.js";
@@ -31,7 +32,7 @@ function Signup() {
         await updateProfile(user, {
           displayName: values.name,
         });
-        navigate("/login");
+        navigate("/");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
