@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home.jsx";
 import Login from "./components/login.jsx";
 import Signup from "./components/signup.jsx";
-import calenderpage from "./components/calenderpage.jsx";
-
+import Calenderpage  from "./components/calenderpage.js";
 import { auth } from "./firebase";
 
 import "./App.css";
@@ -25,6 +24,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+          <Route path="/calenderpage" element={<Calenderpage/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/" element={<Home name={userName} />} />
